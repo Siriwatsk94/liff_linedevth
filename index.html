@@ -58,7 +58,7 @@
     }
 
     async function scanCode() {
-      const result = ""
+      var result = ""
       if(liff.getOS() == "ios"){
         result = await liff.scanCodeV2()
       }else if(liff.getOS() == "android"){
