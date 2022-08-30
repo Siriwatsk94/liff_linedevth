@@ -60,9 +60,9 @@
     async function scanCode() {
       const result = ""
       if(liff.getOS() == "ios"){
-        result = liff.scanCodeV2()
+        result = await liff.scanCodeV2()
       }else if(liff.getOS() == "android"){
-        result = liff.scanCode()
+        result = await liff.scanCode()
       }
       //const result = await liff.scanCodeV2()
       document.getElementById("scanCode").append(result.value)
