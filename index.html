@@ -61,6 +61,10 @@
     }
 
     function openWindow() {
+      liff.openWindow({
+        url: "https://line.me",
+        external: true
+      })
     }
 
     async function getFriendship() {
@@ -125,6 +129,7 @@
         document.getElementById("btnLogOut").style.display = "none"
       } else {
         document.getElementById("btnMsg").style.display = "none"
+        document.getElementById("btnStk").style.display = "none"
         document.getElementById("btnScanCode").style.display = "none"
         document.getElementById("btnClose").style.display = "none"
       }
